@@ -1,0 +1,6 @@
+#Jekyll configuration
+name: Wily Network Guide by Alana using EdTech Guide by Gabe
+description: Comprehensive web app development guide for Wily Network, using guide from EdTech at Harvard DCE
+url: "https://asendlakowski.github.io/WilyNetworkResources/"
+markdown: kramdown
+highlighter: rouge
