@@ -189,7 +189,8 @@ Before starting to work on new tickets, create a new branch labeled `<initials>-
   One branch per ticket, named `<initials>-<partner-initials>/<lowercase-dashed-ticket-description>`
 </Rule>
 
-```bash
+
+```sh
 git checkout main
 git pull
 git checkout -b as-ah/adding-student-page
@@ -201,7 +202,7 @@ Please rebase before pushing your code, and make sure to go through any merge co
   Rebase before pushing your code
 </Rule>
 
-```bash
+```sh
 # Always commit before you rebase
 git add .
 git commit -m "Adding Alana's student page"
@@ -212,7 +213,7 @@ git rebase main
 ```
 
 Fix any merge conflicts fron the rebase and then 
-```bash
+```sh
 # Always push after you commit
 git add .
 git commit -m "description of what you did"
