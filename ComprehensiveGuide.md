@@ -3111,62 +3111,39 @@ task();
 
 # React
 
-All our front-end development are done within the React framework. We pair our React apps with the following technologies:
+All our front-end development are done within the React framework. We pair React with Tailwind for styling:
 
-- [Bootstrap v5](https://getbootstrap.com/docs) for Styling
-- [FontAwesome](https://fontawesome.com) for Glyphs
-
-In favor of built-in React functionality, we do not use:
-
-- Redux
-
-We no longer use any of the following technologies:
-
-- jQuery
-
-Features to use only after a discussion with the team because these features require everyone to be on the same page:
-
-- React Context Providers (useContext hook)
+- [Tailwind](https://tailwindcss.com/)
 
 ## Organize the Project
 
 We organize our React projects with the following file structure:
 
 ```ts
-client/src/
-  index.tsx // Entry point
+the-wily-network/src/
+  main.tsx // Entry point
   App.tsx // Main component
-  Menu.tsx // Non-shared component
-  shared/
-    styles/
-      style.scss // Main shared stylesheet
-    constants/
-      MY_SHARED_CONSTANT.tsx // A shared constant
-    helpers/
-      mySharedHelper.tsx // A shared helper
-    MySharedComponent.tsx // A shared component
-  ...
+  components/
+    AdminHomePage/
+      InnerComplicatedComponent/
+        index.tsx
+      innerSimpleComponent.tsx
+      index.tsx // Main page that imports components
+    StudentHomePage/
+      index.tsx
+    ...
+  styles/
+    index.css // Main shared stylesheet
+  types/
+    Student.ts
+    Admin.ts
+    WishList.ts
+    ...
 ```
 
 ## Create a Component
 
-Each project will either use class-based or functional components, but will not mix and match. New projects will always use functional components. 
-
-<Rule tall>
-  Projects do not mix and match functional vs class-based components
-</Rule>
-
-<Rule tall>
-  New projects use functional components only
-</Rule>
-
-All file management rules apply to components as well (naming conventions, file vs folder modules, etc.), so be sure to check out the section earlier in this guide.
-
-All components must follow a shared structure. Sections that are not used may be left out, but any included sections must be formatted appropriately, named properly, and in the same order as below:
-
-<Rule>
-  Components must follow our template formatting, order, and naming
-</Rule>
+Here is an example component template - this is definetly overkill but generally a good structure to follow.
 
 ```ts
 /**
