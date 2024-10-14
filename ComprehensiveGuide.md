@@ -170,11 +170,11 @@ Programming and Testing:
 
 ## Assigned Tasks
 
-We use GitHub Projects as our task management system. To see what you're assigned, visit the repo, click `Projects`, click our project, and take a look at the `Assigned` column. Cards with your picture on them are yours to do this week.
+We use GitHub Issues as our task management system. To see what you're assigned, visit the repo, click `Issues`, and filter by your name.
 
-When you start working on a task, drag the card to `In Progress`. 
+When you start working on a task, remove the 'assigned' tag and add the 'in progress' tag. 
 
-When you finish a task and have a PR up, drag the card to `In Review`.
+When you finish a task and have a PR up, update the tag to `ready for review`.
 
 Alana and Avery will review your work before moving your card to `Done`.
 
